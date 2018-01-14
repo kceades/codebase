@@ -1,7 +1,10 @@
-import datastructures
+"""
+Author: Kevin Caleb Eades
+Fall 2017
+"""
 
-import random
-import time
+# imports from modules I wrote
+import datastructures
 
 
 

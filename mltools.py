@@ -1,5 +1,5 @@
 """
-Written by Kevin Caleb Eades
+Author: Kevin Caleb Eades
 Fall 2017
 
 The purpose of this file is to have a bunch of machine learning algorithms that
@@ -11,7 +11,7 @@ could be generalized) that can be combined in a meaningful way.
 # imports from files I wrote
 import tools
 
-# imports
+# imports from standard modules
 import numpy as np
 import random
 import matplotlib.pyplot as plt

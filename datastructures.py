@@ -1,4 +1,9 @@
 """
+Author: Kevin Caleb Eades
+Fall 2017
+"""
+
+"""
 node, doublynode, and bstnode classes
 """
 
