@@ -1,5 +1,7 @@
 # codebase
 
-To refresh myself on details of how various things are implemented and how this affects their usage in code, I have been writing some data structures and algorithms (sorting and machine learning) by hand in Python.
+As an exercise in refreshing/honing my computer science skills, I have been writing some data structures and algorithms (sorting and machine learning) by hand in Python.
 
-They don't follow PEP 8 standards since it was more for my own benefit, but maybe I'll fix that someday. I will definitely add onto the ML module as I get time to write more algorithms.
+For the structures file specifically, I will probably gradually improve the code over time. It is at a pretty workable level right now with some basic error handling and supporting multiple data types being inserted into the heaps for example. Not everything has been tested, but I will probably write more test cases in the future.
+
+BIG NOTE: most of the code is uncommented for now, but I will fix that at some point.

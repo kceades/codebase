@@ -4,7 +4,7 @@ Fall 2017
 """
 
 # imports from modules I wrote
-import datastructures
+import structures
 
 
 
@@ -157,15 +157,15 @@ class dijkstranode(object):
 		self.length = length
 
 def Dijkstra(graph,start,end):
-	heapped = datastructures.minheap()
+	heapped = structures.MinHeap()
 	nodes = {start:dijkstranode()}
 	for edge in graph[start]:
 		if edge[1]==end:
 			return edge[0]
 		nodes[edge[1]] = dijkstranode(edge[0])
-		heapped.Push((edge[0],edge[1]))
+		heapped.push((edge[0],edge[1]))
 	while heapped.IsEmpty() is False:
-		current = heapped.Pop()
+		current = heapped.pop()
 		for edge in graph[current[1]]:
 			total_length = nodes[current[1]].length + edge[0]
 			if edge[1]==end:
@@ -174,5 +174,5 @@ def Dijkstra(graph,start,end):
 				nodes[edge[1]].length = min(nodes[edge[1]].length,total_length)
 			else:
 				nodes[edge[1]] = dijkstranode(total_length)
-				heapped.Push((total_length,edge[1]))
+				heapped.push((total_length,edge[1]))
 	return -1
